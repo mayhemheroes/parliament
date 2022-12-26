@@ -1,0 +1,9 @@
+project: parliament
+target: fuzz-policy
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_policy.py
+    libfuzzer: true
+    timeout: 12
