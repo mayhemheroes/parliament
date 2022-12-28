@@ -1,4 +1,3 @@
-cat > test.json << EOF
 {
     "Version": "2012-10-17",
     "Statement": {
@@ -7,6 +6,3 @@ cat > test.json << EOF
         "Resource": ["arn:aws:s3:::bucket1"]
     }
 }
-EOF
-
-parliament --file test.json

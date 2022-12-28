@@ -4,7 +4,7 @@ import atheris
 import sys
 import fuzz_helpers
 
-with atheris.instrument_imports(include=['parliament']):
+with atheris.instrument_imports(include=['parliament', 'jsoncfg', ]):
     from parliament import analyze_policy_string
 
 def TestOneInput(data):
