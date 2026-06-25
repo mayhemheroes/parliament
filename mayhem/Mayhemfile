@@ -1,0 +1,7 @@
+project: parliament
+target: fuzz-policy
+testsuite:
+  - file:///mayhem/mayhem/testsuite
+cmds:
+  - cmd: /mayhem/fuzz-policy
+    libfuzzer: true
